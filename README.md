@@ -70,6 +70,16 @@ The server will start on `http://localhost:3000`
 npm run dev
 ```
 
+## Running Tests
+
+To run the test suite locally:
+
+```bash
+npm test
+```
+
+This will execute all tests using Jest.
+
 ## Usage
 
 1. Open your browser to `http://localhost:3000`
