@@ -4,7 +4,10 @@ import { updateValueRequest, fetchValueRequest } from '../redux/actions';
 
 const App = () => {
   const dispatch = useDispatch();
-  const { value, loading, error, lastUpdated } = useSelector(state => state);
+  const value = useSelector(state => state.value);
+  const loading = useSelector(state => state.loading);
+  const error = useSelector(state => state.error);
+  const lastUpdated = useSelector(state => state.lastUpdated);
 
   useEffect(() => {
     console.log('[REACT COMPONENT] App mounted');
