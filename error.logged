@@ -1,0 +1,35 @@
+EDUX STORE] Current state: { value: 'GBdxsm', loading: false, error: null, 
+lastUpdated: null }                                                          
+[EXPRESS SSR] Rendering React app to string...                               
+Selector unknown returned the root state when called. This can lead to unnece
+ssary rerenders.                                                             
+Selectors that return the entire state are almost certainly a mistake, as the
+y will cause a rerender whenever *anything* in state changes. {              
+  stack: 'Error\n' +                                                         
+    '    at /home/ubuntu/repos/stateTest/node_modules/react-redux/lib/hooks/u
+seSelector.js:104:23\n' +                                                    
+    '    at memoizedSelector (/home/ubuntu/repos/stateTest/node_modules/use-s
+ync-external-store/cjs/use-sync-external-store-shim/with-selector.development
+.js:47:30)\n' +                                                              
+    '    at /home/ubuntu/repos/stateTest/node_modules/use-sync-external-store
+/cjs/use-sync-external-store-shim/with-selector.development.js:76:26\n' +    
+    '    at Object.useSyncExternalStore (/home/ubuntu/repos/stateTest/node_mo
+dules/react-dom/cjs/react-dom-server-legacy.node.development.js:5221:10)\n' +
+    '    at useSyncExternalStore (/home/ubuntu/repos/stateTest/node_modules/r
+eact/cjs/react.development.js:1676:21)\n' +                                  
+    '    at process.env.NODE_ENV.exports.useSyncExternalStoreWithSelector (/h
+ome/ubuntu/repos/stateTest/node_modules/use-sync-external-store/cjs/use-sync-
+external-store-shim/with-selector.development.js:82:19)\n' +                 
+    '    at useSelector (/home/ubuntu/repos/stateTest/node_modules/react-redu
+x/lib/hooks/useSelector.js:125:27)\n' +
+    '    at App (webpack://react-redux-saga-ssr/./src/shared/components/App.j
+s?:21:78)\n' +
+    '    at renderWithHooks (/home/ubuntu/repos/stateTest/node_modules/react-
+dom/cjs/react-dom-server-legacy.node.development.js:5662:16)\n' +
+    '    at renderIndeterminateComponent (/home/ubuntu/repos/stateTest/node_m
+odules/react-dom/cjs/react-dom-server-legacy.node.development.js:5736:15)'
+}
+[EXPRESS SSR] React app rendered successfully
+[EXPRESS SSR] App HTML length: 2747 characters
+[EXPRESS SSR] Sending HTML response to client
+[EXPRESS SSR] ========================================
