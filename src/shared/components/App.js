@@ -1,10 +1,18 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch, shallowEqual } from 'react-redux';
 import { updateValueRequest, fetchValueRequest } from '../redux/actions';
 
 const App = () => {
   const dispatch = useDispatch();
-  const { value, loading, error, lastUpdated } = useSelector(state => state);
+  const { value, loading, error, lastUpdated } = useSelector(
+    (state) => ({
+      value: state.value,
+      loading: state.loading,
+      error: state.error,
+      lastUpdated: state.lastUpdated,
+    }),
+    shallowEqual
+  );
 
   useEffect(() => {
     console.log('[REACT COMPONENT] App mounted');
